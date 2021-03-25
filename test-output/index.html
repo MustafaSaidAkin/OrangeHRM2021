@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-AddEmployee_Suite">
+              <span class="suite-name border-passed">AddEmployee Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-AddEmployee_Suite">
+                    <span>AddEmployee_suite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-AddEmployee_Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-AddEmployee_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-AddEmployee_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-AddEmployee_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-AddEmployee_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-AddEmployee_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-AddEmployee_Suite" class="hide-methods passed suite-AddEmployee_Suite"> (hide)</a> <!-- hide-methods passed suite-AddEmployee_Suite -->
+                      <a href="#" panel-name="suite-AddEmployee_Suite" class="show-methods passed suite-AddEmployee_Suite"> (show)</a> <!-- show-methods passed suite-AddEmployee_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-AddEmployee_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AddEmployee_Suite" title="com.qa.orangehrm.tests.AddEmployeeTest" hash-for-method="addEmployee_3(bulut, akın)">addEmployee_3(bulut, akın)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AddEmployee_Suite" title="com.qa.orangehrm.tests.AddEmployeeTest" hash-for-method="addEmployee_3(feride, kara)">addEmployee_3(feride, kara)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AddEmployee_Suite" title="com.qa.orangehrm.tests.AddEmployeeTest" hash-for-method="addEmployee_3(talip, kalem)">addEmployee_3(talip, kalem)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AddEmployee_Suite" title="com.qa.orangehrm.tests.AddEmployeeTest" hash-for-method="addEmployee_3(sena, bala)">addEmployee_3(sena, bala)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AddEmployee_Suite" title="com.qa.orangehrm.tests.AddEmployeeTest" hash-for-method="addEmployee_3(salih, foça)">addEmployee_3(salih, foça)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AddEmployee_Suite" title="com.qa.orangehrm.tests.AddEmployeeTest" hash-for-method="checkEmployeeTest(bulut, akın)">checkEmployeeTest(bulut, akın)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AddEmployee_Suite" title="com.qa.orangehrm.tests.AddEmployeeTest" hash-for-method="checkEmployeeTest(sena, bala)">checkEmployeeTest(sena, bala)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AddEmployee_Suite" title="com.qa.orangehrm.tests.AddEmployeeTest" hash-for-method="checkEmployeeTest(feride, kara)">checkEmployeeTest(feride, kara)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AddEmployee_Suite" title="com.qa.orangehrm.tests.AddEmployeeTest" hash-for-method="checkEmployeeTest(talip, kalem)">checkEmployeeTest(talip, kalem)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AddEmployee_Suite" title="com.qa.orangehrm.tests.AddEmployeeTest" hash-for-method="checkEmployeeTest(salih, foça)">checkEmployeeTest(salih, foça)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-AddEmployee_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-AddEmployee_Suite" class="panel AddEmployee_Suite">
+          <div class="suite-AddEmployee_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.orangehrm.tests.AddEmployeeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployee_3(bulut, akın)">
+                  </a> <!-- addEmployee_3(bulut, akın) -->
+                  <span class="method-name">addEmployee_3</span>
+                  <span class="parameters">(bulut, akın)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployee_3(feride, kara)">
+                  </a> <!-- addEmployee_3(feride, kara) -->
+                  <span class="method-name">addEmployee_3</span>
+                  <span class="parameters">(feride, kara)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployee_3(talip, kalem)">
+                  </a> <!-- addEmployee_3(talip, kalem) -->
+                  <span class="method-name">addEmployee_3</span>
+                  <span class="parameters">(talip, kalem)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployee_3(sena, bala)">
+                  </a> <!-- addEmployee_3(sena, bala) -->
+                  <span class="method-name">addEmployee_3</span>
+                  <span class="parameters">(sena, bala)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployee_3(salih, foça)">
+                  </a> <!-- addEmployee_3(salih, foça) -->
+                  <span class="method-name">addEmployee_3</span>
+                  <span class="parameters">(salih, foça)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkEmployeeTest(bulut, akın)">
+                  </a> <!-- checkEmployeeTest(bulut, akın) -->
+                  <span class="method-name">checkEmployeeTest</span>
+                  <span class="parameters">(bulut, akın)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkEmployeeTest(sena, bala)">
+                  </a> <!-- checkEmployeeTest(sena, bala) -->
+                  <span class="method-name">checkEmployeeTest</span>
+                  <span class="parameters">(sena, bala)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkEmployeeTest(feride, kara)">
+                  </a> <!-- checkEmployeeTest(feride, kara) -->
+                  <span class="method-name">checkEmployeeTest</span>
+                  <span class="parameters">(feride, kara)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkEmployeeTest(talip, kalem)">
+                  </a> <!-- checkEmployeeTest(talip, kalem) -->
+                  <span class="method-name">checkEmployeeTest</span>
+                  <span class="parameters">(talip, kalem)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkEmployeeTest(salih, foça)">
+                  </a> <!-- checkEmployeeTest(salih, foça) -->
+                  <span class="method-name">checkEmployeeTest</span>
+                  <span class="parameters">(salih, foça)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AddEmployee_Suite-class-passed -->
+        </div> <!-- panel AddEmployee_Suite -->
+        <div panel-name="test-xml-AddEmployee_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/mustafasaidakin/eclipse-workspace/OrangeHRM2021/src/test/resources/testrunners/AddEmployee_suite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;AddEmployee Suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;Parallel Test&quot; parallel=&quot;classes&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.orangehrm.tests.AddEmployeeTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Parallel Test --&gt;
+&lt;/suite&gt; &lt;!-- AddEmployee Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-AddEmployee_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for AddEmployee Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Parallel Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-AddEmployee_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for AddEmployee Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-AddEmployee_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for AddEmployee Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_AddEmployee_Suite');
+function tableData_AddEmployee_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'checkEmployeeTest')
+data.setCell(0, 2, 'com.qa.orangehrm.tests.AddEmployeeTest')
+data.setCell(0, 3, 11630);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'checkEmployeeTest')
+data.setCell(1, 2, 'com.qa.orangehrm.tests.AddEmployeeTest')
+data.setCell(1, 3, 11548);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'checkEmployeeTest')
+data.setCell(2, 2, 'com.qa.orangehrm.tests.AddEmployeeTest')
+data.setCell(2, 3, 11422);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'checkEmployeeTest')
+data.setCell(3, 2, 'com.qa.orangehrm.tests.AddEmployeeTest')
+data.setCell(3, 3, 11415);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'checkEmployeeTest')
+data.setCell(4, 2, 'com.qa.orangehrm.tests.AddEmployeeTest')
+data.setCell(4, 3, 11409);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'addEmployee_3')
+data.setCell(5, 2, 'com.qa.orangehrm.tests.AddEmployeeTest')
+data.setCell(5, 3, 10873);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'addEmployee_3')
+data.setCell(6, 2, 'com.qa.orangehrm.tests.AddEmployeeTest')
+data.setCell(6, 3, 5898);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'addEmployee_3')
+data.setCell(7, 2, 'com.qa.orangehrm.tests.AddEmployeeTest')
+data.setCell(7, 3, 5880);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'addEmployee_3')
+data.setCell(8, 2, 'com.qa.orangehrm.tests.AddEmployeeTest')
+data.setCell(8, 3, 5832);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'addEmployee_3')
+data.setCell(9, 2, 'com.qa.orangehrm.tests.AddEmployeeTest')
+data.setCell(9, 3, 5792);
+window.suiteTableData['AddEmployee_Suite']= { tableData: data, tableDiv: 'times-div-AddEmployee_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-AddEmployee_Suite">
+              </div> <!-- times-div-AddEmployee_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-AddEmployee_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for AddEmployee Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-AddEmployee_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-AddEmployee_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.orangehrm.tests.AddEmployeeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addEmployee_3(bulut, akın)</span>
+                <span class="method-start">13448 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">24332 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">24431 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addEmployee_3(salih, foça)</span>
+                <span class="method-start">36249 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">42131 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">42224 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addEmployee_3(talip, kalem)</span>
+                <span class="method-start">53813 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">59715 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">59809 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addEmployee_3(sena, bala)</span>
+                <span class="method-start">71773 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">77567 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">77663 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addEmployee_3(feride, kara)</span>
+                <span class="method-start">89505 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">95338 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">95456 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkEmployeeTest(bulut, akın)</span>
+                <span class="method-start">107425 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">118849 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">118944 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkEmployeeTest(salih, foça)</span>
+                <span class="method-start">130952 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">142502 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">142596 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkEmployeeTest(talip, kalem)</span>
+                <span class="method-start">154450 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">166083 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">166179 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkEmployeeTest(sena, bala)</span>
+                <span class="method-start">177837 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">189247 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">189338 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkEmployeeTest(feride, kara)</span>
+                <span class="method-start">200963 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">212380 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
