@@ -1,13 +1,237 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+<testng-results skipped="2" failed="0" ignored="0" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="AddEmployee Suite" duration-ms="213308" started-at="2021-03-17T03:38:52 EET" finished-at="2021-03-17T03:42:25 EET">
+  <suite name="Parallel Suite" duration-ms="43094" started-at="2021-03-29T20:06:15 EET" finished-at="2021-03-29T20:06:58 EET">
     <groups>
     </groups>
-    <test name="Parallel Test" duration-ms="213308" started-at="2021-03-17T03:38:52 EET" finished-at="2021-03-17T03:42:25 EET">
-      <class name="com.qa.orangehrm.tests.AddEmployeeTest">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="setUp" is-config="true" duration-ms="13332" started-at="2021-03-17T03:38:52 EET" finished-at="2021-03-17T03:39:06 EET">
+    <test name="Parallel Test 2" duration-ms="36027" started-at="2021-03-29T20:06:15 EET" finished-at="2021-03-29T20:06:51 EET">
+      <class name="com.qa.orangehrm.tests.LoginPageTest">
+        <test-method status="FAIL" signature="setUp(java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@3887cf88]" name="setUp" is-config="true" duration-ms="5673" started-at="2021-03-29T20:06:15 EET" finished-at="2021-03-29T20:06:21 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Process unexpectedly closed with status 0
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MUSTAFA-MacBook-Air.local', ip: 'fe80:0:0:0:47b:aa63:2864:fcea%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Process unexpectedly closed with status 0
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MUSTAFA-MacBook-Air.local', ip: 'fe80:0:0:0:47b:aa63:2864:fcea%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: 
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at com.qa.orangehrm.base.BasePage.initialize_driver(BasePage.java:39)
+at com.qa.orangehrm.tests.LoginPageTest.setUp(LoginPageTest.java:40)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="loginTest()[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@3887cf88]" name="loginTest" duration-ms="0" started-at="2021-03-29T20:06:36 EET" description="This method checks if i can login to website with correct credentials" finished-at="2021-03-29T20:06:36 EET">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Process unexpectedly closed with status 0
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MUSTAFA-MacBook-Air.local', ip: 'fe80:0:0:0:47b:aa63:2864:fcea%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Process unexpectedly closed with status 0
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MUSTAFA-MacBook-Air.local', ip: 'fe80:0:0:0:47b:aa63:2864:fcea%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: 
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at com.qa.orangehrm.base.BasePage.initialize_driver(BasePage.java:39)
+at com.qa.orangehrm.tests.LoginPageTest.setUp(LoginPageTest.java:40)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@3887cf88]" name="tearDown" is-config="true" duration-ms="-1617037606405" started-at="2021-03-29T20:06:46 EET" finished-at="1970-01-01T02:00:00 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp(java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@3887cf88]" name="setUp" is-config="true" duration-ms="-1617037606449" started-at="2021-03-29T20:06:46 EET" finished-at="1970-01-01T02:00:00 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="loginTest2()[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@3887cf88]" name="loginTest2" duration-ms="0" started-at="2021-03-29T20:06:46 EET" description="This method checks if i can login to website with incorrect credentials" finished-at="2021-03-29T20:06:46 EET">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Process unexpectedly closed with status 0
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MUSTAFA-MacBook-Air.local', ip: 'fe80:0:0:0:47b:aa63:2864:fcea%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Process unexpectedly closed with status 0
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MUSTAFA-MacBook-Air.local', ip: 'fe80:0:0:0:47b:aa63:2864:fcea%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_271'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: 
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at com.qa.orangehrm.base.BasePage.initialize_driver(BasePage.java:39)
+at com.qa.orangehrm.tests.LoginPageTest.setUp(LoginPageTest.java:40)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest2 -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@3887cf88]" name="tearDown" is-config="true" duration-ms="-1617037611492" started-at="2021-03-29T20:06:51 EET" finished-at="1970-01-01T02:00:00 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.orangehrm.tests.LoginPageTest -->
+    </test> <!-- Parallel Test 2 -->
+    <test name="Parallel Test" duration-ms="43094" started-at="2021-03-29T20:06:15 EET" finished-at="2021-03-29T20:06:58 EET">
+      <class name="com.qa.orangehrm.tests.LoginPageTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@5dcbb60]" name="setUp" is-config="true" duration-ms="6714" started-at="2021-03-29T20:06:15 EET" finished-at="2021-03-29T20:06:22 EET">
           <params>
             <param index="0">
               <value>
@@ -18,27 +242,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addEmployee_3(java.lang.String, java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="addEmployee_3" duration-ms="10873" started-at="2021-03-17T03:39:06 EET" data-provider="getEmployees2" finished-at="2021-03-17T03:39:17 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[bulut]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[akın]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@5dcbb60]" name="loginTest" duration-ms="22337" started-at="2021-03-29T20:06:22 EET" description="This method checks if i can login to website with correct credentials" finished-at="2021-03-29T20:06:44 EET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addEmployee_3 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="tearDown" is-config="true" duration-ms="97" started-at="2021-03-17T03:39:17 EET" finished-at="2021-03-17T03:39:17 EET">
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@5dcbb60]" name="tearDown" is-config="true" duration-ms="145" started-at="2021-03-29T20:06:44 EET" finished-at="2021-03-29T20:06:44 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="setUp" is-config="true" duration-ms="11815" started-at="2021-03-17T03:39:17 EET" finished-at="2021-03-17T03:39:29 EET">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@5dcbb60]" name="setUp" is-config="true" duration-ms="3773" started-at="2021-03-29T20:06:44 EET" finished-at="2021-03-29T20:06:48 EET">
           <params>
             <param index="0">
               <value>
@@ -49,275 +261,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addEmployee_3(java.lang.String, java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="addEmployee_3" duration-ms="5880" started-at="2021-03-17T03:39:29 EET" data-provider="getEmployees2" finished-at="2021-03-17T03:39:35 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[salih]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[foça]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="loginTest2()[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@5dcbb60]" name="loginTest2" duration-ms="9883" started-at="2021-03-29T20:06:48 EET" description="This method checks if i can login to website with incorrect credentials" finished-at="2021-03-29T20:06:58 EET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addEmployee_3 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="tearDown" is-config="true" duration-ms="91" started-at="2021-03-17T03:39:35 EET" finished-at="2021-03-17T03:39:35 EET">
+        </test-method> <!-- loginTest2 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.LoginPageTest@5dcbb60]" name="tearDown" is-config="true" duration-ms="142" started-at="2021-03-29T20:06:58 EET" finished-at="2021-03-29T20:06:58 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="setUp" is-config="true" duration-ms="11587" started-at="2021-03-17T03:39:35 EET" finished-at="2021-03-17T03:39:46 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addEmployee_3(java.lang.String, java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="addEmployee_3" duration-ms="5898" started-at="2021-03-17T03:39:46 EET" data-provider="getEmployees2" finished-at="2021-03-17T03:39:52 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[talip]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[kalem]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addEmployee_3 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="tearDown" is-config="true" duration-ms="92" started-at="2021-03-17T03:39:52 EET" finished-at="2021-03-17T03:39:52 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="setUp" is-config="true" duration-ms="11963" started-at="2021-03-17T03:39:52 EET" finished-at="2021-03-17T03:40:04 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addEmployee_3(java.lang.String, java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="addEmployee_3" duration-ms="5792" started-at="2021-03-17T03:40:04 EET" data-provider="getEmployees2" finished-at="2021-03-17T03:40:10 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sena]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[bala]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addEmployee_3 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="tearDown" is-config="true" duration-ms="94" started-at="2021-03-17T03:40:10 EET" finished-at="2021-03-17T03:40:10 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="setUp" is-config="true" duration-ms="11841" started-at="2021-03-17T03:40:10 EET" finished-at="2021-03-17T03:40:22 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addEmployee_3(java.lang.String, java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="addEmployee_3" duration-ms="5832" started-at="2021-03-17T03:40:22 EET" data-provider="getEmployees2" finished-at="2021-03-17T03:40:28 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[feride]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[kara]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addEmployee_3 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="tearDown" is-config="true" duration-ms="93" started-at="2021-03-17T03:40:28 EET" finished-at="2021-03-17T03:40:28 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="setUp" is-config="true" duration-ms="11962" started-at="2021-03-17T03:40:28 EET" finished-at="2021-03-17T03:40:40 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="checkEmployeeTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="checkEmployeeTest" duration-ms="11422" started-at="2021-03-17T03:40:40 EET" data-provider="getEmployees2" finished-at="2021-03-17T03:40:51 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[bulut]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[akın]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkEmployeeTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="tearDown" is-config="true" duration-ms="93" started-at="2021-03-17T03:40:51 EET" finished-at="2021-03-17T03:40:51 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="setUp" is-config="true" duration-ms="12008" started-at="2021-03-17T03:40:51 EET" finished-at="2021-03-17T03:41:03 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="checkEmployeeTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="checkEmployeeTest" duration-ms="11548" started-at="2021-03-17T03:41:03 EET" data-provider="getEmployees2" finished-at="2021-03-17T03:41:15 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[salih]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[foça]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkEmployeeTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="tearDown" is-config="true" duration-ms="93" started-at="2021-03-17T03:41:15 EET" finished-at="2021-03-17T03:41:15 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="setUp" is-config="true" duration-ms="11853" started-at="2021-03-17T03:41:15 EET" finished-at="2021-03-17T03:41:27 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="checkEmployeeTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="checkEmployeeTest" duration-ms="11630" started-at="2021-03-17T03:41:27 EET" data-provider="getEmployees2" finished-at="2021-03-17T03:41:39 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[talip]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[kalem]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkEmployeeTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="tearDown" is-config="true" duration-ms="93" started-at="2021-03-17T03:41:39 EET" finished-at="2021-03-17T03:41:39 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="setUp" is-config="true" duration-ms="11655" started-at="2021-03-17T03:41:39 EET" finished-at="2021-03-17T03:41:50 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="checkEmployeeTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="checkEmployeeTest" duration-ms="11409" started-at="2021-03-17T03:41:50 EET" data-provider="getEmployees2" finished-at="2021-03-17T03:42:02 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sena]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[bala]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkEmployeeTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="tearDown" is-config="true" duration-ms="91" started-at="2021-03-17T03:42:02 EET" finished-at="2021-03-17T03:42:02 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="setUp" is-config="true" duration-ms="11622" started-at="2021-03-17T03:42:02 EET" finished-at="2021-03-17T03:42:13 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="checkEmployeeTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="checkEmployeeTest" duration-ms="11415" started-at="2021-03-17T03:42:13 EET" data-provider="getEmployees2" finished-at="2021-03-17T03:42:25 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[feride]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[kara]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkEmployeeTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.orangehrm.tests.AddEmployeeTest@64712be]" name="tearDown" is-config="true" duration-ms="94" started-at="2021-03-17T03:42:25 EET" finished-at="2021-03-17T03:42:25 EET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.orangehrm.tests.AddEmployeeTest -->
+      </class> <!-- com.qa.orangehrm.tests.LoginPageTest -->
     </test> <!-- Parallel Test -->
-  </suite> <!-- AddEmployee Suite -->
+  </suite> <!-- Parallel Suite -->
 </testng-results>
